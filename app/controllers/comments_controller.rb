@@ -16,6 +16,16 @@ class CommentsController < ApplicationController
         render json: @comment, status: :created
     end 
 
+    def destroy 
+        @comment = Comment.find_by(id: params[:id])
+        if @comment
+            @comment.destroy
+            render json: { messages: ["Comment was deleted!"] }, status: :ok
+        else
+            render json: { errors: ['Comment not found.'] }, status: :not_found
+        end
+    end 
+
     private 
 
     # def comment_params 
