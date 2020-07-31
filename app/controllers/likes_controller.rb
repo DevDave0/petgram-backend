@@ -7,7 +7,7 @@ class LikesController < ApplicationController
     end 
 
     def create 
-        @like = like.new 
+        @like = Like.new 
         @like.like = params[:like]
         @like.user_id = params[:user_id]
         @like.post_id = params[:post_id]
@@ -17,7 +17,7 @@ class LikesController < ApplicationController
     end 
 
     def destroy 
-        @like = like.find_by(id: params[:id])
+        @like = Like.find_by(id: params[:id])
         if @like
             @like.destroy
             render json: { messages: ["like was deleted!"] }, status: :ok
