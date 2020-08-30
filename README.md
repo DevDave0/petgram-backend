@@ -1,24 +1,26 @@
-# README
+# Petgram
+A social media single page web application for pets using Javascript and Ruby on Rails. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![Petgram](https://github.com/DevDave0/petgram-frontend/blob/master/Screen%20Shot%202020-08-29%20at%208.10.12%20PM.png)
 
-Things you may want to cover:
+## Project Details 
 
-* Ruby version
+Petgram is an single page application that allows a user to:
+1. Login and add pets that a user owns.
+2. Select a pet and add images for that specific pet. 
+3. Like and comment on a post of the pet. 
+4. Browse through the explore page to see posts of other pets.
 
-* System dependencies
+Video demo link: https://youtu.be/9GXSqkO9nYg
 
-* Configuration
 
-* Database creation
+## Installation Instructions 
 
-* Database initialization
+1. Clone repository to your computer 
+2. Run `bundle install` to install required Gems. 
+3. Run `rails db:create` and `rails db:migrate` to migrate the schema.
+4. Run `rails s` to start localhost(http://localhost:3000/).
+5. Once the Rails server is running, start the front end here: https://github.com/DevDave0/petgram-frontend
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Project was built using Javascript, custom CSS and Ruby on Rails. 
